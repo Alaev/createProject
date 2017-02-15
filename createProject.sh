@@ -85,8 +85,8 @@ echo '{
 }' > package.json;
 
 # install package.json
-npm install
-
+# npm install
+# yarn install
 
 # remove createProject file.
 rm -f createProject.sh
