@@ -45,8 +45,7 @@ echo '{
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true,
-        "jquery": true
+        "node": true
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -62,7 +61,21 @@ echo '{
         "no-unused-vars": "warn",
         "constructor-super": "warn",
         "valid-typeof": "warn",
-        "semi":"error"
+        "semi": "error",
+        "indent": ["error", 4],
+        "newline-after-var": "error",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "ignore"
+        }],
+        "no-empty": "error",
+        "newline-before-return": "error"
+
     }
 }' > .eslintrc.json
 echo '{
